@@ -1,5 +1,11 @@
 package game;
 
+import game.game.*;
+import game.players.ExceptionPlayer;
+import game.players.HumanPlayer;
+import game.players.Player;
+import game.players.RandomPlayer;
+
 import java.util.Scanner;
 
 public class Main {
@@ -16,7 +22,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Choose board?");
+        System.out.println("Choose board");
         System.out.println("1 - Common mnk board");
         System.out.println("2 - Board with diagonal obstacles");
         int boardTypeUser = getUserInput(in, BOARD_TYPES_COUNT);
